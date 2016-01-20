@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "struts-2.0.dtd">
+<struts>
+    <package name="package1" extends="struts-default">
+    	<action name="single" class="com.bigpipe.tag.TestAction" method="single">
+            <result>bigPipeSingle.jsp</result>
+        </action>
+        <action name="multi" class="com.bigpipe.tag.TestAction" method="multi">
+            <result>bigPipeMulti.jsp</result>
+        </action>
+         <action name="mytag" class="com.bigpipe.tag.TestAction" method="multi">
+            <result>bigtag.jsp</result>
+        </action>
+    </package>
+</struts>
