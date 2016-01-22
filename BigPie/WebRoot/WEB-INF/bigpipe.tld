@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>        
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>2.2.3</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>bigpipe</short-name>
+	<uri>/jzy</uri>
+	<display-name>"BigPipe Tag"</display-name>
+	
+	<tag>
+		<name>multiThread</name>
+		<tag-class>com.bigpipe.tag.MultiThreadTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>pageLetNum</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>bigPipeJSPath</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>pageLet</name>
+		<tag-class>com.bigpipe.tag.PageLetTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>dealClass</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>bigPipeTo</name>
+		<tag-class>com.bigpipe.tag.BigPipeToTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>bigPipeFrom</name>
+		<tag-class>com.bigpipe.tag.BigPipeFromTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>bigPipeJSPath</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>copy</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>visiable</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>    
