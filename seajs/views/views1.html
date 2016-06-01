@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HelloSeaJS</title>
+</head>
+<body>
+	<script src="../scripts/seajs/sea.js" id="seajsnode"></script>
+     <script type="text/javascript" charset="utf-8" >
+        //定义
+        define(function(require, exports) {
+            return {
+                msg:'hello world'
+              }
+        });
+        //调用
+        seajs.use('cons', function(cons) {
+            alert(cons.msg);
+        });
+    </script>
+</body>
+</html>

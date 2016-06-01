@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HelloSeaJS</title>
+	<link rel="stylesheet" href="../styles/site.css" />
+</head>
+<body>
+	<h1 id="hello-seajs">
+		Hello SeaJS
+	</h1>
+
+
+
+	<!-- 
+	<script src="../scripts/seajs/sea.js" id="seajsnode" data-main="application/application"></script> -->
+
+	 
+	<script src="../scripts/seajs/sea.js" id="seajsnode"></script>
+	<!-- SeaJS会根据自身的URI来决定URL base，而SeaJS在加载其他模块的时候会根据这个URL base来计算路径。SeaJS会忽略掉seajs这两种目录，照上述的目录结构，此处的URL base就是./scripts，这样其他模块就可以与seajs目录并行存放。 -->
+	<script>
+		seajs.use("application/application");
+	</script>
+
+ <!-- 那么，SeaJS又是怎么找到这个文件呢？也就是说，这个模块对应的加载路径是多少？
+ “算法”是：SeaJS_URL_base + data-main
+ 如上文，该例子的SeaJS_URL_base是HelloSeaJS/assets/scripts/ -->
+ 
+</body>
+</html>

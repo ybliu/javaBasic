@@ -1,0 +1,18 @@
+<!-- http://www.itnose.net/detail/6323542.html -->
+<!-- http://www.itnose.net/detail/6147076.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HelloSeaJS</title>
+</head>
+<body>
+	<script src="../scripts/seajs/sea.js" id="seajsnode"></script>
+     <script type="text/javascript" charset="utf-8" >
+      //加载入口文件main.js，默认后缀js自动匹配
+    seajs.use('mymain/main',function(main){ 
+        console.log(main.say());
+    });
+    </script>
+</body>
+</html>
